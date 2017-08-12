@@ -1,0 +1,433 @@
+@charset "utf-8";
+/*简洁网站建设*/
+/* reset */
+body,h1,h2,h3,h4,h5,p,dl,dd,ul,ol,form,input,textarea,th,td,select {
+    margin:0;
+    padding:0;
+}
+em {
+    font-style:normal;
+}
+li {
+    list-style:none;
+}
+a {
+    text-decoration:none;
+}
+img {
+    border:none;
+    vertical-align:top;
+}
+table {
+    border-collapse:collapse;
+}
+input,textarea {
+    outline:none;
+}
+textarea {
+    resize:none;
+    overflow:auto;
+}
+body {
+    font-size:12px;
+    font-family:"微软雅黑";
+
+    /*height: 3000px;*/
+}
+/* end reset */
+.title{
+    width: 1000px;
+    height: 90px;
+    margin: 0 auto;
+    /*border: 1px solid red;*/
+    position: relative;
+    top: 0;
+}
+.title .textlogo{
+    width: 270px;
+    height: 34px;
+    position: absolute;
+    top: 30px;
+    left: 0;
+}
+.title .textlist{
+    width: 500px;
+    height: 34px;
+    clear: both;
+    /*border: 1px solid red;*/
+    position: absolute;
+    left: 500px;
+    top: 30px;
+}
+.title .textlist li{
+    float: left;
+    margin-left: 20px;
+    text-align: center;
+    line-height: 34px;
+}
+.title .textlist li a{
+    display: block;
+     width: 75px;
+     height: 32px;
+    /*border: 1px solid blue;*/
+     font-size: 15px;
+     color: #000000;
+}
+.title .textlist li :hover{
+    background: #990303;
+}
+
+.banner{
+    width: 100%;
+    height: 480px;
+    /*border: 1px solid orangered;*/
+    margin: 0 auto;
+    position: relative;
+}
+.banner .bannertu{
+    width: 100%;
+    /**/
+    margin: 0 auto;
+}
+.banner .bannertu li{
+    width: 100%;
+    height: 480px;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+/*
+.bannertu li:nth-of-type(1){
+    background-image: url(../img/banner1.png);
+    z-index: 1;
+}
+.bannertu li:nth-of-type(2){
+     background-image: url(../img/banner2.png);
+ }
+.bannertu li:nth-of-type(3){
+    background-image: url(../img/banner3.png);
+}
+.bannertu li:nth-of-type(4){
+    background-image: url(../img/banner2.png);
+}
+*/
+.banner .choose{
+    width: 184px;
+    height: 8px;
+    position: absolute;
+    /*border: 1px solid red;*/
+    clear: both;
+    bottom: 15px;
+    left: 50%;
+    margin-left: -92px;
+    z-index: 5;
+}
+.banner .choose li{
+    width: 40px;
+    height: 8px;
+    float: left;
+    margin-left: 5px;
+    background: #a3a7ab;
+    cursor: pointer;
+}
+
+.banner .choose li.active{
+    background: red;
+}
+.contentone{
+    width: 1000px;
+    height: 388px;
+    margin: 0px auto;
+    /*border: 1px solid red;*/
+    position: relative;
+}
+.contentone p{
+    font-size: 26px;
+    color: #083148;
+    font-family: '微软雅黑';
+    text-align: center;
+    padding-top: 45px;
+}
+.contentone span{
+    font-size: 15px;
+    color: #666666;
+    font-family: '微软雅黑';
+    display: block;
+    text-align: center;
+    padding-top: 20px;
+}
+.contentone .pictureslist{
+    width: 1000px;
+    height: 200px;
+    margin: 0px auto;
+    /*border: 1px solid red;*/
+    position: absolute;
+    bottom: 42px;
+    clear: both;
+}
+.contentone .pictureslist li{
+    width: 300px;
+    height: 200px;
+    float: left;
+    margin-right: 50px;
+}
+.contentone .pictureslist li:nth-of-type(3){
+    margin-right: 0px;
+}
+.contentone .pictureslist li img{
+    width: 300px;
+    height: 200px;
+}
+.clock{
+    width: 100%;
+    height: 360px;
+    /*border: 1px solid red;*/
+    background-color: #f1f1f0;
+    margin: 0px auto;
+    position: relative;
+}
+.clock .article{
+    width: 1000px;
+    height: 360px;
+    margin: 0px auto;
+    /*border: 1px solid red;*/
+}
+.clock .article p{
+    font-size: 26px;
+    color: #083148;
+    font-family: '微软雅黑';
+    text-align: center;
+    padding-top: 25px;
+}
+.clock .article .usimg{
+    width: 122px;
+    height: 18px;
+    /*border: 1px solid red;*/
+    margin: 10px 438px;
+}
+.clock .article .dakuang{
+    width: 1000px;
+    height: 260px;
+    /*border: 1px solid #ff4900;*/
+    clear: both;
+    position: relative;
+}
+.clock .article .dakuang .textwb {
+    width: 600px;
+    height: 260px;
+    overflow: hidden;
+    float: left;
+    /*border: 1px solid #ff4900;*/
+}
+
+.clock .article .textwb li:nth-of-type(1){
+    font-size: 18px;
+    font-family: '微软雅黑';
+    padding-top: 0px;
+    padding-left: 0;
+    color: black;
+}
+.clock .article .textwb li{
+    font-size: 13px;
+    font-family: '微软雅黑';
+    color: #737373;
+    margin-top: 30px;
+}
+.clock .article .textwb li span{
+    font-size: 17px;
+    font-family: '微软雅黑';
+    color: black;
+}
+.clock .article .dakuang .erweima{
+    width: 306px;
+    height: 200px;
+    /*border: 1px solid #ff4900;*/
+    float: right;
+    margin-top: 30px;
+}
+.clock .article .dakuang .erweima .texterweima{
+    width: 306px;
+    height: 200px;
+}
+.clock .article .dakuang .erweima .texterweima li:nth-of-type(1){
+    font-size: 18px;
+    font-family: '微软雅黑';
+    padding-top: 0px;
+    padding-left: 0;
+    color: black;
+}
+.clock .article .dakuang .erweima .texterweima li:nth-of-type(2){
+    font-size: 18px;
+    font-family: '微软雅黑';
+    padding-top: 10px;
+    padding-left: 0;
+    color: black;
+
+}
+.clock .article .dakuang .erweima .texterweima li{
+    font-size: 13px;
+    color: #737373;
+    margin-top: 8px;
+}
+.clock .article .dakuang .erweima .xiaoma{
+    width: 108px;
+    height: 108px;
+    position: absolute;
+    bottom: 60px;
+    right: 0px;
+}
+.dibu{
+    width: 1000px;
+    height: 560px;
+    margin: 0px auto;
+    /*border: 1px solid red;*/
+    position: relative;
+}
+.dibu p{
+    font-size: 26px;
+    color: #083148;
+    font-family: '微软雅黑';
+    text-align: center;
+    padding-top: 25px;
+}
+.dibu .usimg{
+    width: 122px;
+    height: 18px;
+    margin: 10px 438px;
+}
+.dibu .anli{
+    width: 1000px;
+    height: 159px;
+    margin: 0px auto;
+    /*border: 1px solid red;*/
+    padding-top: 30px;
+}
+.dibu .anli .listanli{
+    width: 1000px;
+    clear: both;
+}
+.dibu .anli .listanli li{
+    width: 238px;
+    height: 159px;
+    float: left;
+    margin-left: 15px;
+}
+.dibu .anli .listanli li a.mm{
+    display: none;
+    width: 238px;
+    height: 159px;
+    background: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    top: 130px;
+    float: left;
+    z-index: 30;
+}
+.dibu .anli .listanli li img{
+    width: 238px;
+    height: 159px;
+}
+.dibu .anli .listanli li:nth-of-type(1){
+   margin-left: 0px;
+}
+.dibu .anli .listanli li:nth-of-type(4){
+    margin-right: 0px;
+}
+.dibu .textk{
+    width: 1000px;
+    height: 260px;
+    /*border: 1px solid red;*/
+    margin: 0px auto;
+}
+.dibu .textk .textdibu{
+     width: 1000px;
+     height: 340px;
+    clear: both;
+    position: absolute;
+    top: 310px;
+ }
+.dibu .textk .textdibu li{
+    width: 297px;
+    height: 236px;
+    /*border: 1px solid red;*/
+    float: left;
+    margin-left: 51px;
+}
+.dibu .textk .textdibu li .text{
+    font-size: 12px;
+    color: grey;
+    padding-right: 200px;
+}
+.dibu .textk .textdibu li:nth-of-type(1){
+    margin-left: 0px;
+}
+.dibu .textk .textdibu li:nth-of-type(3){
+    margin-right: 0px;
+}
+.dibu .textk .textdibu li img{
+    width: 290px;
+    height: 90px;
+}
+.footer{
+    width: 100%;
+    height: 250px;
+    background: black;
+    margin: 0px auto;
+    position: relative;
+    bottom: 0px;
+}
+.footer .footerjuzhong{
+    width: 1000px;
+    height: 250px;
+    margin: 0px auto;
+    /*border: 1px solid blue;*/
+}
+.footer .footerjuzhong p{
+    font-size: 30px;
+    text-align: center;
+    line-height: 50px;
+    color: white;
+    font-weight: bolder;
+    padding-top: 20px;
+}
+.footer .footerjuzhong p em{
+    color: orangered;
+}
+.footer .footerjuzhong p span{
+    color: red;
+}
+.footer .footerjuzhong .footerte{
+    width: 1000px;
+    height: 150px;
+    /*border: 1px solid blue;*/
+}
+.footer .footerjuzhong .footerte .textft{
+    width: 520px;
+    height: 30px;
+    clear: both;
+    margin: 0px auto;
+    /*border: 1px solid blue;*/
+}
+.footer .footerjuzhong .footerte .textft li{
+    float: left;
+    margin-left: 15px;
+    line-height: 34px;
+}
+.footer .footerjuzhong .footerte .textft li a{
+    font-size: 14px;
+    color: white;
+    display: block;
+    text-align: center;
+}
+.footer .footerjuzhong .footerte span{
+    width: 520px;
+    height: 30px;
+    font-size: 8px;
+    color: white;
+    line-height: 30px;
+    text-align: center;
+    display: block;
+    /*border: 1px solid blue;*/
+    position: absolute;
+    left: 50%;
+    margin-left: -260px;
+}
